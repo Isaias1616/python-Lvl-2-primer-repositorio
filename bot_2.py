@@ -24,4 +24,4 @@ async def heh(ctx, count_heh = 5):
 async def clave(ctx):
     await ctx.send(gen_pass(10))
 
-bot.run("MTQ1Mjc5NjUxNjQxNzgwMjI1MA.GH2ZYt._Bvt-pbtlpSd7qHYdpDOk1rs8VYujeEv-7Ilv0")
+bot.run("Token")
