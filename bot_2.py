@@ -23,5 +23,20 @@ async def heh(ctx, count_heh = 5):
 @bot.command()
 async def clave(ctx):
     await ctx.send(gen_pass(10))
+    
+@bot.command()
+async def Recyclables(ctx):
+    await ctx.send("Papel y cartón — cajas, libretas, sobres, periódicos." 
+    " Plásticos — botellas, envases, bolsas (según tipo). " 
+    "Vidrio — botellas, frascos Metales — aluminio, latas, acero. "  
+    "Orgánicos - Frutas, vegetales, etc.")
+
+@bot.command()
+async def meme(ctx):
+    archivos = os.listdir()
+    enviar = random.choice(archivos)
+    with open(enviar, 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
 
 bot.run("Token")
