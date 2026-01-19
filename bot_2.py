@@ -13,6 +13,10 @@ async def on_ready():
     print(f'We have logged in as {bot.user}')
 
 @bot.command()
+async def command(ctx):
+    await ctx.send("Los comandos disponibles son: hello, heh, clave, Recyclabes y meme (TODOS USANDO EL SIMBOLO $)")
+
+@bot.command()
 async def hello(ctx):
     await ctx.send(f'Hola, soy un bot {bot.user}!')
 
