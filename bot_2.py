@@ -14,7 +14,7 @@ async def on_ready():
 
 @bot.command()
 async def command(ctx):
-    await ctx.send("Los comandos disponibles son: hello, heh, clave, Recyclabes y meme (TODOS USANDO EL SIMBOLO $)")
+    await ctx.send("Los comandos disponibles son: hello, heh, clave, reciclar, recyclabes y meme (TODOS USANDO EL SIMBOLO $)")
 
 @bot.command()
 async def hello(ctx):
@@ -27,9 +27,13 @@ async def heh(ctx, count_heh = 5):
 @bot.command()
 async def clave(ctx):
     await ctx.send(gen_pass(10))
+@bot.command()
+async def reciclar(ctx):
+    await ctx.send("Reciclar ayuda a disminuir la contaminacion en el planeta. Sin reducir la contaminacion se vera afectada cosas como el el aire que respiramos o la agua que bebemos. Es muy importante para mantener nuestra Tierra saludable para futuras generaciomes.")
+
     
 @bot.command()
-async def Recyclables(ctx):
+async def recyclables(ctx):
     await ctx.send("Papel y cartón — cajas, libretas, sobres, periódicos." 
     " Plásticos — botellas, envases, bolsas (según tipo). " 
     "Vidrio — botellas, frascos Metales — aluminio, latas, acero. "  
